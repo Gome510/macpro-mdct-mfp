@@ -35,3 +35,4 @@ jobs:
           jira-ignore-statuses: Done, Closed, Canceled
           #jira-custom-fields: '{ "customfield_14154" : [{"id": "16986", "value": "MFP"}] }'
           aws-severities: CRITICAL, HIGH, MEDIUM
+          is_jira_enterprise: true
