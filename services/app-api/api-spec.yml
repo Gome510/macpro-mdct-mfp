@@ -1,0 +1,58 @@
+openapi: 3.1.0
+info:
+  version: 1.0.0
+  title: MFP API
+paths:
+  # BANNERS
+  /banners/{bannerId}:
+    get:
+      summary: Get current banner
+      operationId: getBanner
+      tags:
+        - banners
+      parameters:
+        - name: bannerId
+          in: path
+          required: true
+          description: The id of the banner to get # note: our app only uses one id
+          schema:
+            type: string
+      responses:
+        # TODO
+    post:
+      summary: Create a banner
+      operationId: createBanner
+      tags:
+        - banners
+      parameters:
+        - name: bannerId
+          in: path
+          required: true
+          description: The id of the banner to get # note: our app only uses one id
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: #TODO
+        required: true
+      responses:
+        # TODO
+    delete:
+      summary: Delete a banner
+      operationId: createPets
+      tags:
+        - pets
+      parameters:
+        - name: bannerId
+          in: path
+          required: true
+          description: The id of the banner to get # note: our app only uses one id
+          schema:
+            type: string
+      responses:
+        # TODO
+components:
+  schemas:
+  #TODO
